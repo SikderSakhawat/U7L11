@@ -40,7 +40,9 @@ public class Address {
             street = address.substring(address.indexOf(" ") + 1, address.indexOf(","));
         }
         address = address.substring(address.indexOf(",") + 1);
-        city = address.substring(address.indexOf(",") + 2, address.indexOf())
+        city = address.substring(0, address.indexOf(","));
+        address = address.substring(address.indexOf(",") + 1);
+        state = address.substring(address.indexOf(",") + 1)
     }
     // GETTER/SETTER METHODS
     public String getAptNumber() {
